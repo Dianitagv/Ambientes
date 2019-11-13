@@ -24,7 +24,7 @@ exports.aula_model = (sequelize) => {
         }
     }, {
         tableName: 't_aula',
-        timestamps: true
+        timestamps: false
     });
     return aula;
 };

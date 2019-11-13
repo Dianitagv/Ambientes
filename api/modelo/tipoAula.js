@@ -15,7 +15,7 @@ exports.tipoaula_model = (sequelize) => {
         }
     }, {
         tableName: 't_tipoaula',
-        timestamps: true
+        timestamps: false
     });
     return tipoaula;
 };

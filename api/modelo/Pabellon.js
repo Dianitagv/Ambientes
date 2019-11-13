@@ -16,7 +16,7 @@ exports.pabellon_model = (sequelize) => {
         },
     }, {
         tableName: 't_pabellon',
-        timestamps: true
+        timestamps: false
     });
     return pabellon;
 };
