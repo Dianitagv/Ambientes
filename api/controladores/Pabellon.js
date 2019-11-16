@@ -38,7 +38,7 @@ exports.postPabellon = (req, res) => {
     });
 };
 exports.getPabellonesById = (req, res) => {
-    sequelize_1.Pabellon.findByPk(req.params.id).the((objPabellon) => {
+    sequelize_1.Pabellon.findByPk(req.params.id).then((objPabellon) => {
         if (objPabellon) {
             res.status(200).json({
                 message: 'ok',
