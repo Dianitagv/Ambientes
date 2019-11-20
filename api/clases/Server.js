@@ -25,7 +25,7 @@ class Server {
         this.app = express_1.default();
         // obtener el puerto que nos asignará heroku
         // o establer por defecto el puerto 3000
-        this.puerto = process.env.PORT || 3000;
+        this.puerto = process.env.PORT || 5000;
         this.habilitarCORS();
         // La configuracion del body-parser, siempre debe estar antes de configurar las rutas
         this.configurarBodyParser();

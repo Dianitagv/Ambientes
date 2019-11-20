@@ -6,7 +6,7 @@ const Op = Sequelize.Op; // Los operadores de comparacion de sequelize
 exports.crearUsuario = (req, res) => {
     let objUsuario = sequelize_1.Usuario.build(req.body.usuario);
     objUsuario.setSaltYHash(req.body.usuario.usu_pass);
-    /** @save Promesa que GUARDA el registro en la base de datos */
+    /** Promesa que GUARDA el registro en la base de datos */
     objUsuario.save().then((usuarioCreado) => {
         sequelize_1.Usuario.findByPk(usuarioCreado.usu_id).then((usuarioEncontrado) => {
             res.status(201).json({
